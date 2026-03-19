@@ -69,7 +69,7 @@ void sendSensorData() {
 
   // *Send Alert if Soil Moisture is Below 5%*
   if (soilMoisture <= 5 && !soilAlertSent) {
-    Blynk.logEvent("low_soil_moisture", "⚠️ Warning! Soil Moisture is Very Low! ⚠️");
+    Blynk.logEvent("low_soil_moisture", "Warning! Soil Moisture is Very Low!");
     soilAlertSent = true;  // Prevent repeated notifications
   }
   if (soilMoisture > 5) {
