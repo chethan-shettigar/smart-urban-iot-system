@@ -332,7 +332,7 @@ BLYNK_WRITE(RESET_PIN)
     lcd.setCursor(0, 0);
     lcd.print("Data Reset!");
     lcd.setCursor(0, 1);
-    lcd.print("Fresh Start 🚀");
+    lcd.print("Fresh Start");
     delay(2000);
     displayWelcomeMessage();
 }
